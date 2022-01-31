@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--name username email address location phone website company-->
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/headerTv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/identityTv"-->
+<!--        tools:text= "0"/>-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/identityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/contactInfoTv"
+        app:layout_constraintBottom_toTopOf="@id/addressTv"
+        tools:text="1"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/addressTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/identityTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/companyTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="3"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/contactInfoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/identityTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/companyTv"
+        tools:text="2"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/companyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/contactInfoTv"
+        app:layout_constraintStart_toEndOf="@id/addressTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="4"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
