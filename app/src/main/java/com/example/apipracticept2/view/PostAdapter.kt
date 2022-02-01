@@ -29,13 +29,12 @@ class PostAdapter (
 
         fun bind(user: User) {
             with(binding) {
-//                headerTv.text = user.company.bs
                 identityTv.text =
                     "${user.name}\nid: ${user.id} \nusername: ${user.username}"
                 addressTv.text =
-                    "${user.address.street},${user.address.suite}\n${user.address.city},${user.address.zipcode}\n location: latitude - ${user.address.geo.lat} longitude - ${user.address.geo.lng}"
+                    "Address: ${user.address.street},${user.address.suite}\nArea: ${user.address.city}, ${user.address.zipcode}\n Location: latitude - ${user.address.geo.lat} longitude - ${user.address.geo.lng}"
                 contactInfoTv.text =
-                    "Contact Information\nEmail ${user.email}\nPhone Number: ${user.phone}\nWebsite: ${user.website}"
+                    "Email ${user.email}\nPhone Number: ${user.phone}\nWebsite: ${user.website}"
                 companyTv.text =
                     "Company: ${user.company.name} - ${user.company.bs}\n Service: ${user.company.catchPhrase}"
             }

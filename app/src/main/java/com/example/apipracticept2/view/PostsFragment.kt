@@ -35,9 +35,9 @@ class PostsFragment: Fragment() {
 
 
         with(binding) {
-            viewModel.posts.observe(viewLifecycleOwner) {user->
+            viewModel.posts.observe(viewLifecycleOwner) {users->
                 postRv.apply {
-                    adapter = user?.let { PostAdapter(it) }
+                    adapter = users?.let { PostAdapter(it) }
                     layoutManager =
                         LinearLayoutManager(requireContext())
                 }

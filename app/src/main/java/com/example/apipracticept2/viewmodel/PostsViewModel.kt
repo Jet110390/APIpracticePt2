@@ -17,7 +17,7 @@ class PostsViewModel(
     init {
         getPosts()
     }
-    
+
     private fun getPosts() {
         viewModelScope.launch {
             val response = postRepository.getPosts()

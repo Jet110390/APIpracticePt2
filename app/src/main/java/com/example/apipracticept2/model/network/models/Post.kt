@@ -14,6 +14,7 @@ data class User(
     val company: Company
     )
 
+@JsonClass(generateAdapter = true)
 data class Address(
     val street: String,
     val suite: String,
@@ -22,11 +23,13 @@ data class Address(
     val geo: Geo
     )
 
+@JsonClass(generateAdapter = true)
 data class Geo(
     val lat: String,
     val lng: String
     )
 
+@JsonClass(generateAdapter = true)
 data class Company(
     val name: String,
     val catchPhrase: String,
